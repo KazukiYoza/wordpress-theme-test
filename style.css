@@ -12,3 +12,6 @@
     License URI: http://www.gnu.org/licenses/gpl.html
 */
 
+.c-gnav>.menu-item{
+    font-weight: bold;
+}
