@@ -15,9 +15,10 @@
     font-weight: bold;
     color: #42916f;
 }
-
-.wp-block-columns--modal{
+.remodal-is-opened .wp-block-columns--modal{
     min-width: 70vw;
+}
+.wp-block-columns--modal{
     margin-bottom: 0;
     align-items: center;
 }
