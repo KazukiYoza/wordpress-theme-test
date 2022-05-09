@@ -1,6 +1,6 @@
 <?php
 $modal = array();
-$modal['modal_id'] = blcok_value('modal_id');
+$modal['modal_id'] = block_value('modal_id');
 $modal['title'] = block_value('title');
 $modal['desc'] = block_value('description');
 // $modal['image'] = block_field('image');
@@ -8,13 +8,13 @@ $modal['link'] = block_value('link');
 ?>
 
 <figure class="wp-block-image is-style-shadow">
-    <a href="<?php echo $modal['modal_id'] ?>">
+    <a href="#modal_<?php echo $modal['modal_id'] ?>">
         <img src="<?php echo block_field('image') ?>" data-src="" alt="" class="lazyloaded" data-luminous="off">
     </a>
 </figure>
 
 
-<div class="remodal" data-remodal-id="<?php echo $modal['modal_id'] ?>">
+<div class="remodal" data-remodal-id="#modal_<?php echo $modal['modal_id'] ?>">
     <button data-remodal-action="close" class="remodal-close"></button>
     <div class="wp-block-columns">
         <div class="wp-block-column">
