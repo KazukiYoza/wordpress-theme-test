@@ -1,6 +1,5 @@
 <?php 
     $itemId = block_value('item-id'); //商品IDを取得
-    
     /*
     * 商品関連情報をAPIで取得
     */
