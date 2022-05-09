@@ -15,7 +15,7 @@
     font-weight: bold;
     color: #42916f;
 }
-.remodal-is-opened .wp-block-columns--modal{
+.remodal-is-opened{
     min-width: 70vw;
 }
 .wp-block-columns--modal{
