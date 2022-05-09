@@ -20,8 +20,20 @@
 }
 .wp-block-columns--modal{
     margin-bottom: 0;
-    align-items: center;
+    /* align-items: center; */
 }
+.wp-block-column--right{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.wp-block-column--right .title{
+    flex: 1;
+}
+.wp-block-column--right .desc{
+    flex: 2;
+}
+
 .wp-block-columns--modal .swell-block-button__link{
-    min-width: 60%;
+    min-width: 250px;
 }
