@@ -2,7 +2,7 @@
 $modal = array();
 $modal['title'] = block_value('title');
 $modal['desc'] = block_value('description');
-$modal['image'] = block_value('image');
+$modal['image'] = block_field('image');
 $modal['link'] = block_value('link');
 ?>
 
