@@ -14,9 +14,9 @@ $modal['link'] = block_value('link');
 </figure>
 
 
-<div class="remodal" data-remodal-id="#modal_<?php echo $modal['modal_id'] ?>">
+<div class="remodal" data-remodal-id="modal_<?php echo $modal['modal_id'] ?>">
     <button data-remodal-action="close" class="remodal-close"></button>
-    <div class="wp-block-columns">
+    <div class="wp-block-columns wp-block-columns--modal">
         <div class="wp-block-column">
             <figure class="wp-block-image is-style-shadow">
                 <img src="<?php echo block_field('image') ?>" data-src="" alt="" class="lazyloaded" data-luminous="off">
