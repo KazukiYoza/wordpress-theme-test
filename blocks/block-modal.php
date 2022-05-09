@@ -2,14 +2,15 @@
 $modal = array();
 $modal['modal_id'] = block_value('modal_id');
 $modal['title'] = block_value('title');
-$modal['desc'] = block_value('description');
-// $modal['image'] = block_field('image');
+$modal['desc'] = nl2br(block_value('description'));
+$attachment_id = block_value('image');
+$modal['image'] = wp_get_attachment_image( $attachment_id, 'large' );
 $modal['link'] = block_value('link');
 ?>
 
 <figure class="wp-block-image is-style-shadow">
     <a href="#modal_<?php echo $modal['modal_id'] ?>">
-        <img src="<?php echo block_field('image') ?>" data-src="" alt="" class="lazyloaded" data-luminous="off">
+        <?php echo $modal['image']; ?>
     </a>
 </figure>
 
@@ -20,7 +21,7 @@ $modal['link'] = block_value('link');
 
         <div class="wp-block-column wp-block-column--left">
             <figure class="wp-block-image is-style-shadow">
-                <img src="<?php echo block_field('image') ?>" data-src="" alt="" class="lazyloaded" data-luminous="off">
+                <?php echo $modal['image']; ?>
             </figure>
         </div>
         <div class="wp-block-column wp-block-column--right">
